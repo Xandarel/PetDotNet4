@@ -1,20 +1,24 @@
-﻿using PetDotNet4;
-using System.Diagnostics;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+﻿
+using System;
 
 namespace ClassLibrary1
 {
-    internal static class CoreSerializator
+    public class Serializator<T> where T : class
     {
-        public static string Serialize(Person person)
+        private ISerializer<T> _serializer;
+        public ISerializer<T> Serializer
         {
-            return JsonSerializer.Serialize(person);
+            set { _serializer = value; }
         }
 
-        public static T Deserialize<T>(string json)
+        public string Serialize(T serializeElement)
         {
-            return JsonSerializer.Deserialize<T>(json);
+            return _serializer.Serialize(serializeElement);
+        }
+
+        public T Deserialize<T>(string serializedElement)
+        {
+            return _serializer.Deserialize<T>(serializedElement);
         }
     }
 }

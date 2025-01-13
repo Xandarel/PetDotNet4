@@ -1,16 +1,15 @@
 ﻿using Newtonsoft.Json;
-using PetDotNet4;
 
 namespace ClassLibrary1
 {
-    internal static class FrameworkSerializator
+    internal class FrameworkSerializator<T> : ISerializer<T> where T : class
     {
-        public static string Serialize(Person person)
+        public string Serialize<T>(T person)
         {
             return JsonConvert.SerializeObject(person);
         }
 
-        public static T Deserialize<T>(string json)
+        public T Deserialize<T>(string json)
         {
             return JsonConvert.DeserializeObject<T>(json);
         }
