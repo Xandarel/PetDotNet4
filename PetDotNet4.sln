@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetDotNet4", "PetDotNet4\PetDotNet4.csproj", "{3280CFD7-4B64-423F-8DD6-1D215BC32D25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{5D9450FC-DE26-4EFD-989B-EA18C19B265C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCoreApp", "ConsoleCoreApp\ConsoleCoreApp.csproj", "{57C87AD3-B1E3-469B-A259-5BC8D194A126}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3280CFD7-4B64-423F-8DD6-1D215BC32D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3280CFD7-4B64-423F-8DD6-1D215BC32D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3280CFD7-4B64-423F-8DD6-1D215BC32D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3280CFD7-4B64-423F-8DD6-1D215BC32D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9450FC-DE26-4EFD-989B-EA18C19B265C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9450FC-DE26-4EFD-989B-EA18C19B265C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9450FC-DE26-4EFD-989B-EA18C19B265C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9450FC-DE26-4EFD-989B-EA18C19B265C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57C87AD3-B1E3-469B-A259-5BC8D194A126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57C87AD3-B1E3-469B-A259-5BC8D194A126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57C87AD3-B1E3-469B-A259-5BC8D194A126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57C87AD3-B1E3-469B-A259-5BC8D194A126}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
