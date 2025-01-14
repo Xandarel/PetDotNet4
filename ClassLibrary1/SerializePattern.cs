@@ -11,14 +11,11 @@ namespace ClassLibrary1
         public SerializePattern()
         {
             Serializator = new Serializator<T>();
-            if (RuntimeInformation.FrameworkDescription.StartsWith(".NET Framework"))
-            {
+#if NET48_OR_GREATER
                 Serializator.Serializer = new FrameworkSerializator<T>();
-            }
-            else
-            {
+#elif NET8_0_OR_GREATER
                 Serializator.Serializer = new CoreSerializator<T>();
-            }
+#endif
         }
 
         public T Deserialize<T>(string json)
